@@ -19,15 +19,15 @@ tests = [ {'description': 'Testing when PA1 and PA0 are both 0',
     'expected': [('PORTB',0x00)],
     },
     {'description': 'Testing when PA1 is 0 and PA0 is 1.',
-    'steps': [ {'inputs': [('PINA', 0x01)],'iterations': 5},]
+    'steps': [ {'inputs': [('PINA', 0x01)],'iterations': 5}],
     'expected': [('PORTB',0x01)],
     },
     {'description': 'Testing when PA1 is 1 and PA0 is 0.',
-    'steps': [ {'inputs': [('PINA', 0x02)],'iterations': 5},]
+    'steps': [ {'inputs': [('PINA', 0x02)],'iterations': 5}],
     'expected': [('PORTB',0x00)],
     },
     {'description': 'Testing when PA1 is 1 and PA0 is 1.',
-    'steps': [ {'inputs': [('PINA', 0x03)],'iterations': 5},]
+    'steps': [ {'inputs': [('PINA', 0x03)],'iterations': 5}],
     'expected': [('PORTB',0x00)],
     },
     ]
@@ -35,5 +35,5 @@ tests = [ {'description': 'Testing when PA1 and PA0 are both 0',
 # Optionally you can add a set of "watch" variables these need to be global or static and may need
 # to be scoped at the function level (for static variables) if there are naming conflicts. The 
 # variables listed here will display everytime you hit (and stop at) a breakpoint
-watch = ['PORTB']
+#watch = ['PORTB']
 

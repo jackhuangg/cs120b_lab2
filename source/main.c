@@ -22,13 +22,13 @@ int main(void) {
     unsigned char tmpB = 0x00;
     /* Insert your solution below */
     while (1) {
-	tmpA = PORTA & 0x01;
-	tmpB = PORTA & 0x02;
+	tmpA = PINA & 0x01;
+	tmpB = (PINA & 0x02)>>1;
 	if(tmpA && !tmpB){
- 		PORTB = PORTB & 0x01;	
+ 		PORTB = 1;	
 	}
 	else{
-		PORTB = PORTB & 0x00;
+		PORTB = 0;
 	}
     }
     return 1;
