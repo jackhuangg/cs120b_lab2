@@ -23,7 +23,7 @@ int main(void) {
     /* Insert your solution below */
     while (1) {
 	tmpA = PORTA & 0x01;
-	tmpB = PORTA & 0x02;
+	tmpB = (PORTA & 0x02)>>1;
 	if(tmpA && !tmpB){
  		PORTB = PORTB & 0x01;	
 	}
