@@ -24,18 +24,18 @@ int main(void) {
     while (1) {
 	tmpA = 0;
 	tmpB = PINA;
- 	if(!(tmpB&&0x01)){
-		tmpA+=1;
-	}	
-	if(!(tmpB>>1&&0x01)){
-		tmpA+=1;
-	}	
-	if(!(tmpB>>2&&0x01)){
-		tmpA+=1;
-	}	
-	if(!(tmpB>>3&&0x01)){
-		tmpA+=1;
-	}
+	if(!(tmpB&0x01)){
+                tmpA+=1;
+        }
+        if(!((tmpB>>1)&0x01)){
+                tmpA+=1;
+        }
+        if(!((tmpB>>2)&0x01)){
+                tmpA+=1;
+        }
+        if(!((tmpB>>3)&0x01)){
+                tmpA+=1;
+        } 
 	PORTC = tmpA;
     }
     return 1;
