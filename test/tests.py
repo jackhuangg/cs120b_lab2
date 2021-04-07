@@ -30,6 +30,10 @@ tests = [ {'description': 'Testing when PA1 and PA0 are both 0',
     'steps': [ {'inputs': [('PINA', 0x03)],'iterations': 5}],
     'expected': [('PORTB',0x00)],
     },
+    {'description': 'Testing random inputs in PA.',
+    'steps': [ {'inputs': [('PINA', 0xF4)],'iterations': 5}],
+    'expected': [('PORTB',0x00)],
+    }
     ]
 
 # Optionally you can add a set of "watch" variables these need to be global or static and may need
