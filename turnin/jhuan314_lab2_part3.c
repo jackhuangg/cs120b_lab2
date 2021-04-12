@@ -1,7 +1,7 @@
 /*	Author: jhuan314
- *  Partner(s) Name: 
- *	Lab Section:
- *	Assignment: Lab #  Exercise #
+ *  Partner(s) Name: Jack Huang
+ *	Lab Section:23
+ *	Assignment: Lab #2  Exercise #3
  *	Exercise Description: [optional - include for your own benefit]
  *
  *	I acknowledge all content contained herein, excluding template or example
